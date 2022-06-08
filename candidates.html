@@ -1,0 +1,790 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiimm</title>
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/app.css">
+</head>
+
+<body>
+    <!-- dashboard  section -->
+    <div class="dashbaord-main">
+        <!-- left sidebar -->
+        <div class="leftSection wow fadeIn" data-wow-delay=".25s" id='leftSidebar'>
+            <div class="user-profile">
+                <div class="close-dashboard-sidebar">
+
+                    <span class="iconify" onclick="foldSidebar();" data-icon="mdi:window-close"></span>
+                </div>
+                <img src="images/company-logo-your-logo.png" alt="" class="logo">
+            </div>
+            <nav class="sidenav">
+                <ul>
+                    <li class="nav-item active">
+                        <a href="./index.html">
+                            <span class="iconify" data-icon="ic:sharp-dashboard"></span>
+                            Dashboard
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="./index.html">
+                            <span class="iconify" data-icon="heroicons-outline:inbox-in"></span>
+                            Inbox
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="./index.html">
+                            <span class="iconify" data-icon="uim:calender"></span>
+                            Calender & Tools
+                        </a>
+                    </li>
+                    <!-- divider title -->
+                    <p class="nav-types mt-4">Recruitment</p>
+
+                    <li class="nav-item ">
+                        <a href="./index.html">
+                            <span class="iconify" data-icon="bxs:briefcase"></span>
+                            Jobs
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="./candidates.html">
+                            <span class="iconify" data-icon="icomoon-free:users"></span>
+                            Candidates
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="./index.html">
+                            <span class="iconify" data-icon="bi:triangle"></span>
+                            My Refferal
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="./index.html">
+                            <span class="iconify" data-icon="gg:website"></span>
+                            Career Site
+                        </a>
+                    </li>
+                    <!-- divider title -->
+                    <p class="nav-types mt-4">Organaization</p>
+
+                    <li class="nav-item ">
+                        <a href="./index.html">
+                            <span class="iconify" data-icon="bxs:briefcase"></span>
+                            Employee
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="./index.html">
+                            <span class="iconify" data-icon="icomoon-free:users"></span>
+                            Structure
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="./index.html">
+                            <span class="iconify" data-icon="bi:triangle"></span>
+                            Report
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="./index.html">
+                            <span class="iconify" data-icon="gg:website"></span>
+                            Setting
+                        </a>
+                    </li>
+
+                    <!-- <li class="nav-item" onclick=" closedrop(event)">
+                        <a href="#">
+                            <span class="iconify" data-icon="icomoon-free:profile"></span>
+                            Submenu Item 1
+                        </a>
+                        <ul class="sub-item">
+                            <li>
+                                <a href="#">
+                                    <span class="iconify" data-icon="icomoon-free:profile"></span> sub
+                                    items 1
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="iconify" data-icon="icomoon-free:profile"></span> sub
+                                    items 2
+                                </a>
+                            </li>
+                        </ul>
+                    </li>  -->
+                </ul>
+            </nav>
+        </div>
+        <!-- right content box -->
+        <div class="rightSection">
+            <div class="topbar">
+                <div class="fold" onclick='foldSidebar();'>
+                    <span class="iconify text-secondary" data-icon="codicon:layout-sidebar-right"></span>
+                </div>
+                <!-- <h6 class="text-capitalize mb-0 border border-light shadow-sm text-white p-2 border-1 d-inline-block mx-auto rounded">
+                    <small class="fw-bold">welcome to "Company Name"</small>
+                </h6> -->
+                <div class="right-element">
+                    <div class="circle-box bg-warning">
+                        <span class="iconify" data-icon="ant-design:plus-outlined"></span>
+                    </div>
+                    <div class="circle-box">
+                        <span class="iconify" data-icon="clarity:bell-line"></span>
+                    </div>
+                    <div class="dropdown">
+                        <a href="#" class="btn dropdown-toggle profile-manage p-0" role="button"
+                            id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="./images/profile.png" height="40px" width="40px">
+                        </a>
+                        <ul class="dropdown-menu border-0 shadow " aria-labelledby="dropdownMenuButton1">
+                            <a class="dropdown-item" href="#"><span class="iconify"
+                                    data-icon="carbon:user-avatar"></span> Profile</a>
+                            <a class="dropdown-item" href="#"><span class="iconify"
+                                    data-icon="ion:log-out-outline"></span> Log Out</a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dashboard-content py-2 px-4">
+                <!-- top info bar -->
+                <div class="row my-4">
+                    <div class="col-lg-6">
+                        <h3 class="title d-inline mb-0 align-middle me-2">4 Candidates</h3>
+                        <button class="btn btn-sm btn-custom">+1 <strong>New Hire</strong></button>
+                        <span class="cursor-pointer iconify fs-1 txt-grey align-middle ms-2"
+                            onclick="alert('Action will be fired')" data-icon="bx:search"></span>
+                    </div>
+                    <div class="col-lg-6 d-flex justify-content-end mb-3 align-items-center">
+                        <div class="square-box"><span class="iconify" data-icon="bx:download"
+                                onclick="alert('will be download action')"></span></div>
+                        <div class="square-box"><span class="iconify" data-icon="carbon:printer"
+                                onclick="alert(' will be print action')"></span></div>
+                        <button class="btn btn-bordered" onclick="alert('Action will be fired')">+ Add
+                            Candidate</button>
+
+                    </div>
+                </div>
+                <!-- card start -->
+                <div class="row my-3">
+
+
+                    <div class="col-lg-12 mx-auto">
+                        <!-- single user bar  -->
+                        <!-- loop start -->
+                        <div class="candidate-bar">
+                            <div class="items">
+                                <input type="checkbox" name="" id="" class="candidates" checked>
+                            </div>
+                            <div class="items">
+                                <img src="https://content.latest-hairstyles.com/wp-content/uploads/lob-with-side-bangs-for-round-shaped-faces.jpg"
+                                    width="40px" height="40px" class="object-cover rounded-circle align-middle" alt="">
+                                <span class="username">Darlene Rober...</span>
+                            </div>
+                            <div class="items">
+                                <div class="review cursor-pointer" id="reviewStatus" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    <span class="iconify" data-icon="iwwa:star-o"></span> <span class="count">0.0</span>
+
+                                </div>
+                                <ul class="dropdown-menu shadow-lg border-0 rounded-3" aria-labelledby="reviewStatus">
+                                    <div class="review-status">
+                                        <div class="singleItems">
+                                            <div class="item">
+                                                <span class="text-warning iconify" data-icon="jam:star-f"></span>
+                                                <span class="text-warning iconify" data-icon="jam:star-f"></span>
+                                                <span class="text-warning iconify" data-icon="jam:star-f"></span>
+                                                <span class="text-warning iconify" data-icon="jam:star-f"></span>
+                                                <span class="text-warning iconify" data-icon="jam:star-f"></span>
+                                            </div>
+                                            <div class="item">
+                                                <span>Outstanding</span>
+                                            </div>
+                                        </div>
+                                        <div class="singleItems">
+                                            <div class="item">
+                                                <span class="text-warning iconify" data-icon="jam:star-f"></span>
+                                                <span class="text-warning iconify" data-icon="jam:star-f"></span>
+                                                <span class="text-warning iconify" data-icon="jam:star-f"></span>
+                                                <span class="text-warning iconify" data-icon="jam:star-f"></span>
+                                            </div>
+                                            <div class="item">
+                                                <span>Excellent</span>
+                                            </div>
+                                        </div>
+                                        <div class="singleItems">
+                                            <div class="item">
+                                                <span class="text-warning iconify" data-icon="jam:star-f"></span>
+                                                <span class="text-warning iconify" data-icon="jam:star-f"></span>
+                                                <span class="text-warning iconify" data-icon="jam:star-f"></span>
+                                            </div>
+                                            <div class="item">
+                                                <span>Good</span>
+                                            </div>
+                                        </div>
+                                        <div class="singleItems">
+                                            <div class="item">
+                                                <span class="text-warning iconify" data-icon="jam:star-f"></span>
+                                                <span class="text-warning iconify" data-icon="jam:star-f"></span>
+                                            </div>
+                                            <div class="item">
+                                                <span>Average</span>
+                                            </div>
+                                        </div>
+                                        <div class="singleItems">
+                                            <div class="item">
+                                                <span class="text-warning iconify" data-icon="jam:star-f"></span>
+                                            </div>
+                                            <div class="item">
+                                                <span>Poor</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </ul>
+                            </div>
+                            <div class="items">
+                                <div class="screening">
+                                    <div class="title">
+                                        <span>Screening </span>
+                                        <span class="iconify fs-4" data-icon="eva:arrow-ios-downward-outline"></span>
+                                    </div>
+                                    <div class="status-box">
+                                        <div class="item active-green"><span>1</span></div>
+                                        <div class="item active-green"><span>2</span></div>
+                                        <div class="item"><span class="invisible">3</span></div>
+                                        <div class="item"><span class="invisible">4</span></div>
+                                        <div class="item"><span class="invisible">5</span></div>
+                                        <div class="item"><span class="invisible">6</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="items">
+                                <div class="user">Senior Designer
+                                </div>
+                                <div class="designation">
+                                    Designer Team
+                                </div>
+                            </div>
+                            <div class="items">
+                                <div class="date"> 15/03.2021
+                                </div>
+                            </div>
+                            <div class="items">
+                                <img src="https://i0.wp.com/therighthairstyles.com/wp-content/uploads/2013/12/7-medium-layered-hairstyle-with-off-centre-parting.jpg?w=500&ssl=1"
+                                    width="40px" height="40px" class="object-cover rounded-circle align-middle" alt="">
+                                <div class='d-flex flex-column'>
+                                    <div class="username d-block">Kritsin watson</div>
+                                    <small class="text-muted d-block ps-2">Owner</small>
+                                </div>
+                            </div>
+                            <div class="items">
+                                <span class="iconify options" data-icon="bx:dots-horizontal-rounded"
+                                    id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false"></span>
+                                <!-- dropdown items -->
+                                <ul class="dropdown-menu border-0 shadow" aria-labelledby="dropdownMenuLink">
+                                    <li> <a class="dropdown-item" href="#">
+                                            <span class="iconify text-muted"
+                                                data-icon="ic:round-alternate-email"></span>
+
+                                            <span class="text-muted ps-2">Add Option</span>
+                                        </a>
+                                    </li>
+                                    <li> <a class="dropdown-item" href="#">
+                                            <span class="iconify text-muted" data-icon="bytesize:mail"></span>
+                                            <span class="text-muted ps-2 "> Candidate</span></a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <span class="iconify text-muted" data-icon="cil:trash"></span>
+
+                                            <span class="text-muted ps-2"> Delete</span></a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="candidate-bar">
+                            <div class="items">
+                                <input type="checkbox" name="" id="" class="candidates" checked>
+                            </div>
+                            <div class="items">
+                                <img src="https://content.latest-hairstyles.com/wp-content/uploads/lob-with-side-bangs-for-round-shaped-faces.jpg"
+                                    width="40px" height="40px" class="object-cover rounded-circle align-middle" alt="">
+                                <span class="username">Darlene Rober...</span>
+                            </div>
+                            <div class="items">
+                                <div class="review cursor-pointer" id="reviewStatus" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    <span class="iconify" data-icon="iwwa:star-o"></span> <span class="count">0.0</span>
+
+                                </div>
+                                <ul class="dropdown-menu shadow-lg border-0 rounded-3" aria-labelledby="reviewStatus">
+                                    <div class="review-status">
+                                        <div class="singleItems">
+                                            <div class="item">
+                                                <span class="text-warning iconify" data-icon="jam:star-f"></span>
+                                                <span class="text-warning iconify" data-icon="jam:star-f"></span>
+                                                <span class="text-warning iconify" data-icon="jam:star-f"></span>
+                                                <span class="text-warning iconify" data-icon="jam:star-f"></span>
+                                                <span class="text-warning iconify" data-icon="jam:star-f"></span>
+                                            </div>
+                                            <div class="item">
+                                                <span>Outstanding</span>
+                                            </div>
+                                        </div>
+                                        <div class="singleItems">
+                                            <div class="item">
+                                                <span class="text-warning iconify" data-icon="jam:star-f"></span>
+                                                <span class="text-warning iconify" data-icon="jam:star-f"></span>
+                                                <span class="text-warning iconify" data-icon="jam:star-f"></span>
+                                                <span class="text-warning iconify" data-icon="jam:star-f"></span>
+                                            </div>
+                                            <div class="item">
+                                                <span>Excellent</span>
+                                            </div>
+                                        </div>
+                                        <div class="singleItems">
+                                            <div class="item">
+                                                <span class="text-warning iconify" data-icon="jam:star-f"></span>
+                                                <span class="text-warning iconify" data-icon="jam:star-f"></span>
+                                                <span class="text-warning iconify" data-icon="jam:star-f"></span>
+                                            </div>
+                                            <div class="item">
+                                                <span>Good</span>
+                                            </div>
+                                        </div>
+                                        <div class="singleItems">
+                                            <div class="item">
+                                                <span class="text-warning iconify" data-icon="jam:star-f"></span>
+                                                <span class="text-warning iconify" data-icon="jam:star-f"></span>
+                                            </div>
+                                            <div class="item">
+                                                <span>Average</span>
+                                            </div>
+                                        </div>
+                                        <div class="singleItems">
+                                            <div class="item">
+                                                <span class="text-warning iconify" data-icon="jam:star-f"></span>
+                                            </div>
+                                            <div class="item">
+                                                <span>Poor</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </ul>
+                            </div>
+                            <div class="items">
+                                <div class="screening">
+                                    <div class="title">
+                                        <span>Screening </span>
+                                        <span class="iconify fs-4" data-icon="eva:arrow-ios-downward-outline"></span>
+                                    </div>
+                                    <div class="status-box">
+                                        <div class="item active-lightgreen"><span>1</span></div>
+                                        <div class="item"><span class="invisible">2</span></div>
+                                        <div class="item"><span class="invisible">3</span></div>
+                                        <div class="item"><span class="invisible">4</span></div>
+                                        <div class="item"><span class="invisible">5</span></div>
+                                        <div class="item"><span class="invisible">6</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="items">
+                                <div class="user">Senior Designer
+                                </div>
+                                <div class="designation">
+                                    Designer Team
+                                </div>
+                            </div>
+                            <div class="items">
+                                <div class="date"> 15/03.2021
+                                </div>
+                            </div>
+                            <div class="items">
+                                <img src="https://i0.wp.com/therighthairstyles.com/wp-content/uploads/2013/12/7-medium-layered-hairstyle-with-off-centre-parting.jpg?w=500&ssl=1"
+                                    width="40px" height="40px" class="object-cover rounded-circle align-middle" alt="">
+                               <div class='d-flex flex-column'>
+                                    <div class="username d-block">Kritsin watson</div>
+                                    <small class="text-muted d-block ps-2">Owner</small>
+                                </div>
+                            </div>
+                            <div class="items">
+                                <span class="iconify options" data-icon="bx:dots-horizontal-rounded"
+                                    id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false"></span>
+                                <!-- dropdown items -->
+                                <ul class="dropdown-menu border-0 shadow" aria-labelledby="dropdownMenuLink">
+                                    <li> <a class="dropdown-item" href="#">
+                                            <span class="iconify text-muted"
+                                                data-icon="ic:round-alternate-email"></span>
+
+                                            <span class="text-muted ps-2">Add Option</span>
+                                        </a>
+                                    </li>
+                                    <li> <a class="dropdown-item" href="#">
+                                            <span class="iconify text-muted" data-icon="bytesize:mail"></span>
+                                            <span class="text-muted ps-2 "> Candidate</span></a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <span class="iconify text-muted" data-icon="cil:trash"></span>
+
+                                            <span class="text-muted ps-2"> Delete</span></a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="candidate-bar">
+                            <div class="items">
+                                <input type="checkbox" name="" id="" class="candidates" checked checked>
+                            </div>
+                            <div class="items">
+                                <img src="https://content.latest-hairstyles.com/wp-content/uploads/lob-with-side-bangs-for-round-shaped-faces.jpg"
+                                    width="40px" height="40px" class="object-cover rounded-circle align-middle" alt="">
+                                <span class="username">Darlene Rober...</span>
+                            </div>
+                            <div class="items">
+                                <div class="review cursor-pointer" id="reviewStatus" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    <span class="iconify" data-icon="iwwa:star-o"></span> <span class="count">0.0</span>
+
+                                </div>
+                                <ul class="dropdown-menu shadow-lg border-0 rounded-3" aria-labelledby="reviewStatus">
+                                    <div class="review-status">
+                                        <div class="singleItems">
+                                            <div class="item">
+                                                <span class="text-warning iconify" data-icon="jam:star-f"></span>
+                                                <span class="text-warning iconify" data-icon="jam:star-f"></span>
+                                                <span class="text-warning iconify" data-icon="jam:star-f"></span>
+                                                <span class="text-warning iconify" data-icon="jam:star-f"></span>
+                                                <span class="text-warning iconify" data-icon="jam:star-f"></span>
+                                            </div>
+                                            <div class="item">
+                                                <span>Outstanding</span>
+                                            </div>
+                                        </div>
+                                        <div class="singleItems">
+                                            <div class="item">
+                                                <span class="text-warning iconify" data-icon="jam:star-f"></span>
+                                                <span class="text-warning iconify" data-icon="jam:star-f"></span>
+                                                <span class="text-warning iconify" data-icon="jam:star-f"></span>
+                                                <span class="text-warning iconify" data-icon="jam:star-f"></span>
+                                            </div>
+                                            <div class="item">
+                                                <span>Excellent</span>
+                                            </div>
+                                        </div>
+                                        <div class="singleItems">
+                                            <div class="item">
+                                                <span class="text-warning iconify" data-icon="jam:star-f"></span>
+                                                <span class="text-warning iconify" data-icon="jam:star-f"></span>
+                                                <span class="text-warning iconify" data-icon="jam:star-f"></span>
+                                            </div>
+                                            <div class="item">
+                                                <span>Good</span>
+                                            </div>
+                                        </div>
+                                        <div class="singleItems">
+                                            <div class="item">
+                                                <span class="text-warning iconify" data-icon="jam:star-f"></span>
+                                                <span class="text-warning iconify" data-icon="jam:star-f"></span>
+                                            </div>
+                                            <div class="item">
+                                                <span>Average</span>
+                                            </div>
+                                        </div>
+                                        <div class="singleItems">
+                                            <div class="item">
+                                                <span class="text-warning iconify" data-icon="jam:star-f"></span>
+                                            </div>
+                                            <div class="item">
+                                                <span>Poor</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </ul>
+                            </div>
+                            <div class="items">
+                                <div class="screening">
+                                    <div class="title">
+                                        <span>Screening </span>
+                                        <span class="iconify fs-4" data-icon="eva:arrow-ios-downward-outline"></span>
+                                    </div>
+                                    <div class="status-box">
+                                        <div class="item active-orange"><span>1</span></div>
+                                        <div class="item active-orange"><span>2</span></div>
+                                        <div class="item active-orange"><span class="">3</span></div>
+                                        <div class="item"><span class="invisible">4</span></div>
+                                        <div class="item"><span class="invisible">5</span></div>
+                                        <div class="item"><span class="invisible">6</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="items">
+                                <div class="user">Senior Designer
+                                </div>
+                                <div class="designation">
+                                    Designer Team
+                                </div>
+                            </div>
+                            <div class="items">
+                                <div class="date"> 15/03.2021
+                                </div>
+                            </div>
+                            <div class="items">
+                                <img src="https://i0.wp.com/therighthairstyles.com/wp-content/uploads/2013/12/7-medium-layered-hairstyle-with-off-centre-parting.jpg?w=500&ssl=1"
+                                    width="40px" height="40px" class="object-cover rounded-circle align-middle" alt="">
+                               <div class='d-flex flex-column'>
+                                    <div class="username d-block">Kritsin watson</div>
+                                    <small class="text-muted d-block ps-2">Owner</small>
+                                </div>
+                            </div>
+                            <div class="items">
+                                <span class="iconify options" data-icon="bx:dots-horizontal-rounded"
+                                    id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false"></span>
+                                <!-- dropdown items -->
+                                <ul class="dropdown-menu border-0 shadow" aria-labelledby="dropdownMenuLink">
+                                    <li> <a class="dropdown-item" href="#">
+                                            <span class="iconify text-muted"
+                                                data-icon="ic:round-alternate-email"></span>
+
+                                            <span class="text-muted ps-2">Add Option</span>
+                                        </a>
+                                    </li>
+                                    <li> <a class="dropdown-item" href="#">
+                                            <span class="iconify text-muted" data-icon="bytesize:mail"></span>
+                                            <span class="text-muted ps-2 "> Candidate</span></a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <span class="iconify text-muted" data-icon="cil:trash"></span>
+
+                                            <span class="text-muted ps-2"> Delete</span></a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="candidate-bar">
+                            <div class="items">
+                                <input type="checkbox" name="" id="" class="candidates" checked checked>
+                            </div>
+                            <div class="items">
+                                <img src="https://content.latest-hairstyles.com/wp-content/uploads/lob-with-side-bangs-for-round-shaped-faces.jpg"
+                                    width="40px" height="40px" class="object-cover rounded-circle align-middle" alt="">
+                                <span class="username">Darlene Rober...</span>
+                            </div>
+                            <div class="items">
+                                <div class="review cursor-pointer" id="reviewStatus" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    <span class="text-warning iconify" data-icon="jam:star-f"></span> <span class="count text-black">3.0</span>
+
+                                </div>
+                                <ul class="dropdown-menu shadow-lg border-0 rounded-3" aria-labelledby="reviewStatus">
+                                    <div class="review-status">
+                                        <div class="singleItems">
+                                            <div class="item">
+                                                <span class="text-warning iconify" data-icon="jam:star-f"></span>
+                                                <span class="text-warning iconify" data-icon="jam:star-f"></span>
+                                                <span class="text-warning iconify" data-icon="jam:star-f"></span>
+                                                <span class="text-warning iconify" data-icon="jam:star-f"></span>
+                                                <span class="text-warning iconify" data-icon="jam:star-f"></span>
+                                            </div>
+                                            <div class="item">
+                                                <span>Outstanding</span>
+                                            </div>
+                                        </div>
+                                        <div class="singleItems">
+                                            <div class="item">
+                                                <span class="text-warning iconify" data-icon="jam:star-f"></span>
+                                                <span class="text-warning iconify" data-icon="jam:star-f"></span>
+                                                <span class="text-warning iconify" data-icon="jam:star-f"></span>
+                                                <span class="text-warning iconify" data-icon="jam:star-f"></span>
+                                            </div>
+                                            <div class="item">
+                                                <span>Excellent</span>
+                                            </div>
+                                        </div>
+                                        <div class="singleItems">
+                                            <div class="item">
+                                                <span class="text-warning iconify" data-icon="jam:star-f"></span>
+                                                <span class="text-warning iconify" data-icon="jam:star-f"></span>
+                                                <span class="text-warning iconify" data-icon="jam:star-f"></span>
+                                            </div>
+                                            <div class="item">
+                                                <span>Good</span>
+                                            </div>
+                                        </div>
+                                        <div class="singleItems">
+                                            <div class="item">
+                                                <span class="text-warning iconify" data-icon="jam:star-f"></span>
+                                                <span class="text-warning iconify" data-icon="jam:star-f"></span>
+                                            </div>
+                                            <div class="item">
+                                                <span>Average</span>
+                                            </div>
+                                        </div>
+                                        <div class="singleItems">
+                                            <div class="item">
+                                                <span class="text-warning iconify" data-icon="jam:star-f"></span>
+                                            </div>
+                                            <div class="item">
+                                                <span>Poor</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </ul>
+                            </div>
+                            <div class="items">
+                                <div class="screening">
+                                    <div class="title">
+                                        <span>Screening </span>
+                                        <span class="iconify fs-4" data-icon="eva:arrow-ios-downward-outline"></span>
+                                    </div>
+                                    <div class="status-box">
+                                        <div class="item active-pink"><span>1</span></div>
+                                        <div class="item active-pink"><span>2</span></div>
+                                        <div class="item active-pink"><span class="">3</span></div>
+                                        <div class="item active-pink "><span class=" ">4</span></div>
+                                        <div class="item"><span class="invisible">5</span></div>
+                                        <div class="item"><span class="invisible">6</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="items">
+                                <div class="user">Senior Designer
+                                </div>
+                                <div class="designation">
+                                    Designer Team
+                                </div>
+                            </div>
+                            <div class="items">
+                                <div class="date"> 15/03.2021
+                                </div>
+                            </div>
+                            <div class="items">
+                                <img src="https://i0.wp.com/therighthairstyles.com/wp-content/uploads/2013/12/7-medium-layered-hairstyle-with-off-centre-parting.jpg?w=500&ssl=1"
+                                    width="40px" height="40px" class="object-cover rounded-circle align-middle" alt="">
+                               <div class='d-flex flex-column'>
+                                    <div class="username d-block">Kritsin watson</div>
+                                    <small class="text-muted d-block ps-2">Owner</small>
+                                </div>
+                            </div>
+                            <div class="items">
+                                <span class="iconify options" data-icon="bx:dots-horizontal-rounded"
+                                    id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false"></span>
+                                <!-- dropdown items -->
+                                <ul class="dropdown-menu border-0 shadow" aria-labelledby="dropdownMenuLink">
+                                    <li> <a class="dropdown-item" href="#">
+                                            <span class="iconify text-muted"
+                                                data-icon="ic:round-alternate-email"></span>
+
+                                            <span class="text-muted ps-2">Add Option</span>
+                                        </a>
+                                    </li>
+                                    <li> <a class="dropdown-item" href="#">
+                                            <span class="iconify text-muted" data-icon="bytesize:mail"></span>
+                                            <span class="text-muted ps-2 "> Candidate</span></a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <span class="iconify text-muted" data-icon="cil:trash"></span>
+
+                                            <span class="text-muted ps-2"> Delete</span></a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- pagination start -->
+                <div class="row mt-3">
+                    <div class="col-12 ">
+                        <ul class="pagination custom float-end">
+                            <li class="page-item disabled">
+                                <span class="page-link text-muted"> <i class="iconify" data-icon="ep:arrow-left"></i>
+                                    Prev</span>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item active" aria-current="page">
+                                <span class="page-link">2</span>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link" href="#">...</a></li>
+                            <li class="page-item"><a class="page-link" href="#">24</a></li>
+                            <li class="page-item">
+                                <a class="page-link fw-normal" href="#">Next<i class="iconify"
+                                        data-icon="ep:arrow-right"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer  -->
+
+    <!-- <footer class="py-3 w-100">
+
+        <div class="container">
+            <div class="d-flex flex-wrap w-100 mx-auto">
+                <div class=" flex-fill bd-highlight ">
+                    <ul class="m-0 text-white">
+                        <li class="list-style-none">+44 (0)xx xxxx 8xxxx</li>
+                        <li class="list-style-none">support@admin.com</li>
+                        <li class="list-style-none"> address goes here </li>
+                    </ul>
+                </div>
+                <div class="p-2 flex-fill bd-highlight">
+                    <img src="images/company-logo-your-logo.png" width="180px">
+                </div>
+                <div class="p-2 d-flex align-items-center footerContact">
+                    <a href="" class="mx-2 text-decoration-none text-white">Help</a>
+                    <a href="" class="mx-2 text-decoration-none text-white">Contact</a>
+                </div>
+            </div>
+        </div>
+
+    </footer> -->
+
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/iconify.min.js"></script>
+    <script src='./js/app.js'> </script>
+
+    <script>
+        // var ctx = document.getElementById("myChart");
+        // var myChart = new Chart(ctx, {
+        //     type: "line",
+        //     data: {
+        //         labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+        //         datasets: [
+        //             {
+        //                 label: "# of Votes",
+        //                 data: [12, 19, 3, 5, 2, 3]
+        //             }
+        //         ]
+        //     },
+        //     options: {
+        //         scales: {
+        //             y: {
+        //                 ticks: {
+        //                     beginAtZero: true
+        //                 }
+        //             }
+        //         }
+        //     }
+        // });
+    </script>
+
+</body>
+
+</html>
