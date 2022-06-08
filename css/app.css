@@ -86,7 +86,7 @@ ul {
 
 body {
   font-family: "apon-reg", sans-serif;
-  background: #F2F7FA;
+  background: #fff;
 }
 
 body::-webkit-scrollbar {
@@ -742,7 +742,7 @@ footer .social-sites li a .iconify {
       flex-basis: 250px;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  background: #1C212D;
+  background: #F6FAFC;
   -webkit-box-shadow: 1px 11px 17px 0px #0000001a;
           box-shadow: 1px 11px 17px 0px #0000001a;
   z-index: 10;
@@ -885,7 +885,7 @@ footer .social-sites li a .iconify {
 .dashbaord-main .leftSection .sidenav ul li.nav-item a {
   width: 90%;
   font-size: 15px;
-  color: #DDE1E9;
+  color: #6c6c6c;
   display: block;
   text-decoration: none;
   text-transform: capitalize;
@@ -938,7 +938,6 @@ footer .social-sites li a .iconify {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  background: #F7F8FF;
 }
 
 .dashbaord-main .rightSection .topbar {

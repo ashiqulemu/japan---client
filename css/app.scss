@@ -12,7 +12,7 @@ ul {
 //   variables
 
 $primary: #FED831;
-$secondary: #1C212D;
+$secondary: #F6FAFC;
 $white: #fff;
 
 //color 
@@ -97,7 +97,7 @@ $txt: #243a34;
 
 body {
   font-family: "apon-reg", sans-serif;
-  background: #F2F7FA;
+  background: $white;
 
   &::-webkit-scrollbar {
     background-color: #E5EAFD;
@@ -776,7 +776,7 @@ footer {
           a {
             width: 90%;
             font-size: 15px;
-            color: #DDE1E9;
+            color: #6c6c6c;
             display: block;
             text-decoration: none;
             text-transform: capitalize;
@@ -836,8 +836,7 @@ footer {
   }
 
   .rightSection {
-    flex: 1;
-    background: #F7F8FF;
+    flex: 1; 
 
     .topbar {
       width: 100%;
