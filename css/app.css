@@ -96,7 +96,7 @@ body::-webkit-scrollbar {
 
 body::-webkit-scrollbar-thumb {
   border-radius: 50px;
-  background: #FED831;
+  background: #dfe6e9;
 }
 
 .header {
@@ -376,7 +376,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .header .header-portion .search .searchArea .search-box .searchButton:hover {
-  background: #fee264;
+  background: #fdfefe;
 }
 
 .header .header-portion .links {
@@ -802,7 +802,7 @@ footer .social-sites li a .iconify {
   cursor: pointer;
   height: 30px;
   width: 30px;
-  border: 2px solid #FED831;
+  border: 2px solid #dfe6e9;
   border-radius: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -820,7 +820,7 @@ footer .social-sites li a .iconify {
 }
 
 .dashbaord-main .leftSection .user-profile .close-dashboard-sidebar .iconify {
-  color: #FED831;
+  color: #dfe6e9;
 }
 
 @media (max-width: 768px) {
@@ -832,7 +832,7 @@ footer .social-sites li a .iconify {
 }
 
 .dashbaord-main .leftSection .user-profile .user-name {
-  color: #FED831;
+  color: #dfe6e9;
   padding: 15px 0;
   text-align: center;
 }
@@ -866,7 +866,7 @@ footer .social-sites li a .iconify {
 
 .dashbaord-main .leftSection .sidenav::-webkit-scrollbar-thumb {
   border-radius: 50px;
-  background: #FED831;
+  background: #dfe6e9;
 }
 
 .dashbaord-main .leftSection .sidenav ul .nav-types {
@@ -899,13 +899,13 @@ footer .social-sites li a .iconify {
 }
 
 .dashbaord-main .leftSection .sidenav ul li.nav-item a:hover {
-  background: #FED831;
+  background: #dfe6e9;
   border-radius: 5px;
   color: #545454;
 }
 
 .dashbaord-main .leftSection .sidenav ul li.nav-item.active a {
-  background: #FED831;
+  background: #dfe6e9;
   border-radius: 5px;
   color: #545454;
 }
@@ -1117,11 +1117,11 @@ footer .social-sites li a .iconify {
 }
 
 .right-element .dropdown-menu .dropdown-item .iconify {
-  color: #FED831;
+  color: #dfe6e9;
 }
 
 .right-element .dropdown-menu .dropdown-item:hover {
-  background: #FED831;
+  background: #dfe6e9;
   color: #fff !important;
 }
 
@@ -1182,7 +1182,7 @@ footer .social-sites li a .iconify {
   font-size: 1rem;
   line-height: 1.5;
   border-radius: .25rem;
-  background-color: #FED831;
+  background-color: #dfe6e9;
   cursor: pointer;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -1190,7 +1190,7 @@ footer .social-sites li a .iconify {
 }
 
 .btn-theme:hover {
-  background-color: #fede4f;
+  background-color: #f1f4f5;
 }
 
 .btn-danger {
@@ -1253,7 +1253,7 @@ footer .social-sites li a .iconify {
 .form-custom .form-control:focus {
   -webkit-box-shadow: none !important;
           box-shadow: none !important;
-  border-color: #FED831;
+  border-color: #dfe6e9;
 }
 
 .form-custom .form-row {
@@ -1339,7 +1339,7 @@ footer .social-sites li a .iconify {
 
 .form-custom .addProfile .profile-upload:after {
   top: 0;
-  background-color: #FED831;
+  background-color: #dfe6e9;
   right: 0;
   content: '\270F';
   position: absolute;
@@ -1428,7 +1428,7 @@ footer .social-sites li a .iconify {
 }
 
 .wishlist .wishlist-area .wishliat-items .title {
-  color: #FED831;
+  color: #dfe6e9;
   text-align: center;
   margin: 9px 0;
   font-weight: bold;
@@ -1471,11 +1471,11 @@ footer .social-sites li a .iconify {
 }
 
 .pagination li a {
-  color: #FED831;
+  color: #dfe6e9;
 }
 
 .pagination li a.active {
-  background: #FED831;
+  background: #dfe6e9;
   color: #fff;
 }
 
@@ -1515,7 +1515,7 @@ footer .social-sites li a .iconify {
 }
 
 .table-custom tbody tr td a {
-  color: #FED831;
+  color: #dfe6e9;
 }
 
 .table-custom tbody tr:nth-child(even) {
@@ -1617,7 +1617,7 @@ footer .social-sites li a .iconify {
 
 .overflow::-webkit-scrollbar-thumb {
   border-radius: 50px;
-  background: #FED831;
+  background: #dfe6e9;
 }
 
 @media (min-width: 501px) and (max-width: 590px) {
@@ -1657,7 +1657,7 @@ footer .social-sites li a .iconify {
 
 .userStatus {
   padding: 10px;
-  background: #FED831;
+  background: #dfe6e9;
   position: relative;
   margin: 0 auto;
   top: 0;
@@ -1715,7 +1715,7 @@ footer .social-sites li a .iconify {
     border-top: 40px solid #ff000000;
     border-bottom: 40px solid #4c454500;
     border-left: 40px solid #6e13b800;
-    border-right: 40px solid #FED831;
+    border-right: 40px solid #dfe6e9;
     -webkit-transform: rotate(136deg);
     transform: rotate(135deg);
     left: -40px;
@@ -1727,7 +1727,7 @@ footer .social-sites li a .iconify {
     border-top: 40px solid #ff000000;
     border-bottom: 40px solid #4c454500;
     border-left: 40px solid #6e13b800;
-    border-right: 40px solid #FED831;
+    border-right: 40px solid #dfe6e9;
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
     right: -40px;
@@ -1797,7 +1797,7 @@ fieldset legend {
 }
 
 .nav-tabs .nav-link.active {
-  background: #FED831;
+  background: #dfe6e9;
   color: #fff;
 }
 
@@ -2022,7 +2022,7 @@ fieldset legend {
   height: 36px;
   text-align: center;
   font-weight: bold;
-  background-color: #FED831;
+  background-color: #dfe6e9;
 }
 
 .right-element {
@@ -2108,7 +2108,7 @@ fieldset legend {
   content: '';
   height: 15px;
   width: 15px;
-  background-color: #FED831;
+  background-color: #dfe6e9;
   left: 4px;
   top: 4px;
   border-radius: 3px;

@@ -11,7 +11,7 @@ ul {
 
 //   variables
 
-$primary: #FED831;
+$primary: #dfe6e9;
 $secondary: #F6FAFC;
 $white: #fff;
 
@@ -789,7 +789,6 @@ footer {
             }
 
             &:hover {
-
               background: $primary;
               border-radius: 5px;
               color: #545454;
@@ -801,7 +800,6 @@ footer {
               background: $primary;
               border-radius: 5px;
               color: #545454;
-
               .iconify {
                 color: rgb(3, 3, 3) !important;
               }
@@ -815,18 +813,15 @@ footer {
 
             li {
               list-style: none;
-
               a {
                 padding: 12px 40px;
                 color: #333;
                 display: block;
                 text-decoration: none;
-
                 .iconify {
                   color: #2E7BF0;
                   margin-right: 8px;
                 }
-
               }
             }
           }
@@ -837,7 +832,6 @@ footer {
 
   .rightSection {
     flex: 1; 
-
     .topbar {
       width: 100%;
       padding: 8px 15px;
@@ -846,11 +840,6 @@ footer {
       align-items: center;
       justify-content: space-between;
 
-      // @media(max-width:768px) {
-      //     position: sticky;
-      //     top: 0;
-      //     z-index: 1;
-      // }
       .fold {
         cursor: pointer;
         font-size: 2rem;
@@ -861,26 +850,21 @@ footer {
 
     .dashboard-content {
       position: relative;
-
       .rows {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
         column-gap: 10px;
         padding: 15px;
-
         @media(max-width:768px) {
           padding: 0 5px;
         }
-
         .cols {
           flex: 1;
           column-gap: 15px;
-
           @media(max-width:800px) {
             flex: 100%;
           }
-
           .card {
             box-shadow: 0 0.1rem 0.10rem #0000001a;
             border-radius: 6px;
@@ -897,17 +881,14 @@ footer {
               box-shadow: 0 10px 40px #0003;
               transform: translateY(-5px);
             }
-
             .box {
               display: flex;
               align-items: center;
               justify-content: space-around;
-
               @media(max-width:1024px) {
                 justify-content: center;
                 flex-direction: column;
               }
-
               .iconify {
                 font-size: 3.7rem;
                 color: #ffffff;
