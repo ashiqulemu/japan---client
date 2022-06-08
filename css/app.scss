@@ -7,8 +7,6 @@
 ul {
   padding: 0;
 }
-
-
 //   variables
 
 $primary: #dfe6e9;
@@ -29,7 +27,6 @@ $txt: #6e6868;
 }
 
 .tab-customize {
-
   .nav-link {
     font-size: 14px;
     text-transform: uppercase;
@@ -41,13 +38,13 @@ $txt: #6e6868;
     &.active {
       background: 0 !important;
       border-color: #fed83100 #e9012c00 #21252900;
-      border-bottom: 2px solid #fed831;
-      color: #323232 !important;
+      border-bottom: 2px solid #c7c7c7;
+      color: #625e5e !important;
     }
 
     &.hover {
       border-color: 0 !important;
-      border-bottom: 2px solid #fed831;
+      border-bottom: 2px solid #c7c7c7;
     }
 
   }
@@ -60,7 +57,7 @@ $txt: #6e6868;
 .badge-custom {
   height: 25px;
   width: 25px;
-  background: #305E5B;
+  background: #c1c1c1;
   color: #fff;
   display: inline-flex;
   align-items: center;
@@ -1788,7 +1785,7 @@ fieldset {
 }
 
 .title {
-  color: #223F3E;
+  color: #878787;
 }
 
 .txt-grey {
@@ -1869,7 +1866,7 @@ fieldset {
 
 .btn-bordered {
   padding: 7px 18px;
-  border: 2px solid #567F7D;
+  border: 2px solid #a1a1a1;
   background: 0;
   color: #567F7D;
   font-weight: 800;
@@ -1878,7 +1875,7 @@ fieldset {
   outline: 0;
 
   &:hover {
-    background: #567F7D;
+    background: #a1a1a1;
     color: #fff;
   }
 }
@@ -1918,7 +1915,7 @@ fieldset {
       content: '';
       height: 25;
       width: 25;
-      background-color: #00C491;
+      background-color: #dfe6e9;
       left: 0;
       top: 0;
       border-radius: 2px;
@@ -1928,7 +1925,7 @@ fieldset {
       position: absolute;
       content: '\2713';
       top: 1px;
-      color: #fff;
+      color: #5e5a5a;
       z-index: 1;
       left: 7px;
     }
@@ -1965,7 +1962,7 @@ fieldset {
 
       .username {
         font-size: 15px;
-        color: #204744;
+        color: #a1a1a1;
         font-weight: 600;
         margin-left: 8px;
         width: 100%;
@@ -1998,7 +1995,7 @@ fieldset {
       .screening {
         .title {
           font-size: 15px;
-          color: #204744;
+          color: #a1a1a1;
           font-weight: bold;
           display: flex;
         }
@@ -2012,7 +2009,7 @@ fieldset {
 
       .user {
         font-size: 15px;
-        color: #204744;
+        color: #a1a1a1;
         font-weight: 600;
       }
 
@@ -2032,7 +2029,7 @@ fieldset {
 
       .date {
         font-size: 15px;
-        color: #204744;
+        color: #a1a1a1;
         font-weight: 600;
       }
     }
@@ -2048,7 +2045,7 @@ fieldset {
 
       .username {
         font-size: 15px;
-        color: #204744;
+        color: #a1a1a1;
         font-weight: 600;
         margin-left: 8px;
       }
@@ -2212,7 +2209,7 @@ fieldset {
       -webkit-box-shadow: 0px 2px 4px black;
       box-shadow: 0px 1px 7px #00000026;
       border-radius: 5px;
-      border-top: 4px solid;
+      border-top: 4px solid #c7c7c7;
       padding: 13px;
       display: flex;
       justify-content: space-between;

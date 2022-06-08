@@ -29,13 +29,13 @@ ul {
 .tab-customize .nav-link.active {
   background: 0 !important;
   border-color: #fed83100 #e9012c00 #21252900;
-  border-bottom: 2px solid #fed831;
-  color: #323232 !important;
+  border-bottom: 2px solid #c7c7c7;
+  color: #625e5e !important;
 }
 
 .tab-customize .nav-link.hover {
   border-color: 0 !important;
-  border-bottom: 2px solid #fed831;
+  border-bottom: 2px solid #c7c7c7;
 }
 
 .tab-content {
@@ -45,7 +45,7 @@ ul {
 .badge-custom {
   height: 25px;
   width: 25px;
-  background: #305E5B;
+  background: #c1c1c1;
   color: #fff;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -1989,7 +1989,7 @@ fieldset legend {
 }
 
 .title {
-  color: #223F3E;
+  color: #878787;
 }
 
 .txt-grey {
@@ -2079,7 +2079,7 @@ fieldset legend {
 
 .btn-bordered {
   padding: 7px 18px;
-  border: 2px solid #567F7D;
+  border: 2px solid #a1a1a1;
   background: 0;
   color: #567F7D;
   font-weight: 800;
@@ -2089,7 +2089,7 @@ fieldset legend {
 }
 
 .btn-bordered:hover {
-  background: #567F7D;
+  background: #a1a1a1;
   color: #fff;
 }
 
@@ -2119,7 +2119,7 @@ fieldset legend {
   content: '';
   height: 25;
   width: 25;
-  background-color: #00C491;
+  background-color: #dfe6e9;
   left: 0;
   top: 0;
   border-radius: 2px;
@@ -2129,7 +2129,7 @@ fieldset legend {
   position: absolute;
   content: '\2713';
   top: 1px;
-  color: #fff;
+  color: #5e5a5a;
   z-index: 1;
   left: 7px;
 }
@@ -2173,7 +2173,7 @@ fieldset legend {
 
 .candidate-bar .items:nth-child(2) .username {
   font-size: 15px;
-  color: #204744;
+  color: #a1a1a1;
   font-weight: 600;
   margin-left: 8px;
   width: 100%;
@@ -2202,7 +2202,7 @@ fieldset legend {
 
 .candidate-bar .items:nth-child(4) .screening .title {
   font-size: 15px;
-  color: #204744;
+  color: #a1a1a1;
   font-weight: bold;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2216,7 +2216,7 @@ fieldset legend {
 
 .candidate-bar .items:nth-child(5) .user {
   font-size: 15px;
-  color: #204744;
+  color: #a1a1a1;
   font-weight: 600;
 }
 
@@ -2242,7 +2242,7 @@ fieldset legend {
 
 .candidate-bar .items:nth-child(6) .date {
   font-size: 15px;
-  color: #204744;
+  color: #a1a1a1;
   font-weight: 600;
 }
 
@@ -2261,7 +2261,7 @@ fieldset legend {
 
 .candidate-bar .items:nth-child(7) .username {
   font-size: 15px;
-  color: #204744;
+  color: #a1a1a1;
   font-weight: 600;
   margin-left: 8px;
 }
@@ -2448,7 +2448,7 @@ fieldset legend {
   -webkit-box-shadow: 0px 2px 4px black;
   box-shadow: 0px 1px 7px #00000026;
   border-radius: 5px;
-  border-top: 4px solid;
+  border-top: 4px solid #c7c7c7;
   padding: 13px;
   display: -webkit-box;
   display: -ms-flexbox;
