@@ -1720,10 +1720,11 @@ fieldset {
   }
 }
 
-.card-style {
-  box-shadow: 0 4px 24px 0 #0000001a;
+.card-style { 
   border: 0;
+  border-radius: 12px; 
   border-radius: 12px;
+  background:$secondary;
 }
 
 .upperInfo {
@@ -2109,7 +2110,7 @@ fieldset {
 }
 
 .bottom-part {
-  background: #F1F8FD;
+  background: $primary;
   padding: 13px;
   border: 1px solid #dfdfdf5e;
   border-radius: 4px;
