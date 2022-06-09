@@ -2277,3 +2277,61 @@ fieldset {
     }
   }
 }
+
+
+// questionair CSS
+
+.bg-default {
+  background: #F7F7F7;
+}
+
+.questionair {
+  background: #F6FAFC;
+  .txt {
+    color: #5c5c5c;
+    font-weight: 600;
+    font-size: 14px;
+  }
+}
+
+.questions {
+  border-radius: 6px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding: 20px;
+  border: 1px solid #EAEAEB;
+}
+
+.question-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px 0;
+  padding: 0;
+
+  .item {
+   
+
+    
+      margin-right: 12px;
+    
+
+    margin-bottom: 8px;
+
+    label {
+      border-radius: 4px; cursor: pointer;
+      padding: 12px;
+      background: #F4F4F4;
+      color: #6D6B71;
+      border: 2px solid transparent;
+    }
+
+    .optionCheker {
+      display: none;
+
+      &:checked+label {
+        border-color: #3A92E3;
+      }
+    }
+  }
+
+}
