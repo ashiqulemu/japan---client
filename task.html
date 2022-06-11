@@ -164,135 +164,109 @@
             </div>
 
             <div class="dashboard-content py-2 px-4">
-                <!-- top info bar -->
-                <div class="row my-4">
-                    <div class="row">
-                        <div class="col-lg-12 d-flex flex-wrap">
-                            <img src="./images/profile.png" alt="" width="80px" class="align-middle">
-                           <div class="ms-2">
-                            <h4 class="fw-bold title d-inline mb-0 align-middle me-2 lh-lg text-capitalize">New hire
-                                survey
-                             </h4>
-                           <h6 class="text-muted"> Submitted Tuesday, Sep 28, 2021</h6>
-                           </div>
-                        </div>                        
+                <!-- tabs start-->
+                <div class="row my-3 px-1">
+                    <ul class="nav nav-tabs tab-customize" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="home-tab" data-bs-toggle="tab"
+                                data-bs-target="#notifications" type="button" role="tab" aria-controls="notifications"
+                                aria-selected="true">TODO  </button>
+                        </li>
+
+                    </ul>
+                    <div class="tab-content" id="customizedTab ">
+
+                        <div class="tab-pane fade show active" id="notifications" role="tabpanel"
+                            aria-labelledby="home-tab" tabindex="0">
+
+                            <div class="col-lg-10 mx-auto task">
+                                <div class="card my-5 border-0 px-2">
+                                    <div class="card-body">
+                                        <div class="inner">
+                                            <div class="flex-fill">
+                                                <label for="input-select" class="task-label">
+                                                    <input type="radio" name="" id="input-select">
+                                                    <span class="ms-2"> complete main UI components </span>
+                                                </label>
+                                                <div class="text-muted sub-txt">Lorem ipsum, dolor sit amet consectetur
+                                                    adipisicing elit. Eius nisi hic magni
+                                                </div>
+                                                <div class="fw-bold sub-txt d-flex flex-wrap lh-lg">
+                                                    <small class="text-danger">
+                                                        <span class="iconify" data-icon="clarity:date-solid"></span>
+                                                        <span> 6-april-2022</span>
+                                                    </small>
+                                                    <small class="ms-3 text-muted">
+                                                        <span class="iconify"
+                                                            data-icon="ant-design:user-outlined"></span>
+                                                        Ester Horder
+                                                    </small>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <a href="" class="sub-txt  my-2 btn btn-bordered task-done">Done</a>
+                                            </div>
+                                        </div>
+                                        <div class="inner">
+                                            <div class="flex-fill">
+                                                <label for="input-select" class="task-label">
+                                                    <input type="radio" name="" id="input-select">
+                                                    <span class="ms-2"> Landing Page design </span>
+                                                </label>
+                                                <div class="text-muted sub-txt">Lorem ipsum, dolor sit amet consectetur
+                                                    adipisicing elit. Eius nisi hic magni
+                                                </div>
+                                                <div class="fw-bold sub-txt d-flex flex-wrap lh-lg">
+                                                    <small class="text-danger">
+                                                        <span class="iconify" data-icon="clarity:date-solid"></span>
+                                                        <span> 6-april-2022</span>
+                                                    </small>
+                                                    <small class="ms-3 text-muted">
+                                                        <span class="iconify"
+                                                            data-icon="ant-design:user-outlined"></span>
+                                                        Ester Horder
+                                                    </small>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <a href="" class="sub-txt  my-2 btn btn-bordered task-done">Done</a>
+                                            </div>
+                                        </div>
+                                        <div class="inner">
+                                            <div class="flex-fill">
+                                                <label for="input-select" class="task-label">
+                                                    <input type="radio" name="" id="input-select">
+                                                    <span class="ms-2"> Brand guideline</span>
+                                                </label>
+                                                <div class="text-muted sub-txt">Lorem ipsum, dolor sit amet consectetur
+                                                    adipisicing elit. Eius nisi hic magni
+                                                </div>
+                                                <div class="fw-bold sub-txt d-flex flex-wrap lh-lg">
+                                                    <small class="text-danger">
+                                                        <span class="iconify" data-icon="clarity:date-solid"></span>
+                                                        <span> 6-april-2022</span>
+                                                    </small>
+                                                    <small class="ms-3 text-muted">
+                                                        <span class="iconify"
+                                                            data-icon="ant-design:user-outlined"></span>
+                                                        Ester Horder
+                                                    </small>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <a href="" class="sub-txt  my-2 btn btn-bordered task-done">Done</a>
+                                            </div>
+                                        </div>
+                                        <a href="" class="sub-txt  mt-4 float-end btn btn-bordered task-done">Add Task</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
                     </div>
                 </div>
-                <div class="p-3 rounded-3 questionair">
-                    <div class="row">
-                        <div class="col-lg-2">
-                            <div class="d-flex flex-column">
-                                <span class="text-muted">Name</span>
-                                <span class="txt">Ashiqul Islam</span>
-                            </div>
-                        </div>
-                        <div class="col-lg-2">
-                            <div class="d-flex flex-column">
-                                <span class="text-muted">Department</span>
-                                <span class="txt">Computer Science</span>
-                            </div>
-                        </div>
-                        <div class="col-lg-2">
-                            <div class="d-flex flex-column">
-                                <span class="text-muted">Position</span>
-                                <span class="txt">Senior UI Developer</span>
-                            </div>
-                        </div>
-                        <div class="col-lg-2">
-                            <div class="d-flex flex-column">
-                                <span class="text-muted">Hire Date</span>
-                                <span class="txt">09-June-2022</span>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="questions   bg-white">
-                    <div class="col-12 mb-3">
-                        <p class="fw-bold fs-6 ps-0">1. How's your job going ?</p>
-                        <div class="question-container">
-                            <div class="item">
-                                <input type="radio" class="optionCheker" name="q1" value="1" id="er1">
-                                <label for="er1">😱 Really Bad</label>
-                            </div>
-                            <div class="item">
-                                <input type="radio" class="optionCheker" name="q1" value="2" id="er2">
-                                <label for="er2">😱 Bad</label>
-                            </div>
-                            <div class="item">
-                                <input type="radio" class="optionCheker" name="q1" value="3" id="er3">
-                                <label for="er3">😱 Just ok</label>
-                            </div>
-                            <div class="item">
-                                <input type="radio" class="optionCheker" name="q1" value="4" id="er4">
-                                <label for="er4">😱 Good</label>
-                            </div>
-                            <div class="item">
-                                <input type="radio" class="optionCheker" name="q1" value="5" id="er5">
-                                <label for="er5">😱 Really Good</label>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="col-12 mb-3">
-                        <p class="fw-bold fs-6 ps-0">2. How did training go</p>
-                        <div class="question-container">
-                            <div class="item">
-                                <input type="radio" class="optionCheker" name="q1" value="1" id="er1">
-                                <label for="er1">😱 Really Bad</label>
-                            </div>
-                            <div class="item">
-                                <input type="radio" class="optionCheker" name="q1" value="2" id="er2">
-                                <label for="er2">😱 Bad</label>
-                            </div>
-                            <div class="item">
-                                <input type="radio" class="optionCheker" name="q1" value="3" id="er3">
-                                <label for="er3">😱 Just ok</label>
-                            </div>
-                            <div class="item">
-                                <input type="radio" class="optionCheker" name="q1" value="4" id="er4">
-                                <label for="er4">😱 Good</label>
-                            </div>
-                            <div class="item">
-                                <input type="radio" class="optionCheker" name="q1" value="5" id="er5">
-                                <label for="er5">😱 Really Good</label>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="col-12 mb-3">
-                        <p class="fw-bold fs-6 ps-0">3. Do you feel you are making a differnece ?</p>
-                        <div class="question-container">
-                            <div class="item">
-                                <input type="radio" class="optionCheker" name="q1" value="1" id="er1">
-                                <label for="er1">😱 Yes</label>
-                            </div>
-                            <div class="item">
-                                <input type="radio" class="optionCheker" name="q1" value="2" id="er2">
-                                <label for="er2">😱 No</label>
-                            </div>
-
-
-                        </div>
-                    </div>
-                    <div class="col-12 mb-3">
-                        <p class="fw-bold fs-6 ps-0">4. Do you understand mission and values of Wayane Enterprises ?</p>
-                        <div class="question-container">
-                            <div class="item">
-                                <input type="radio" class="optionCheker" name="q1" value="1" id="er1">
-                                <label for="er1">😱 Yes</label>
-                            </div>
-                            <div class="item">
-                                <input type="radio" class="optionCheker" name="q1" value="2" id="er2">
-                                <label for="er2">😱 No</label>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-
 
                 <!-- pagination start -->
                 <div class="row mt-3">
