@@ -2546,3 +2546,33 @@ table.dataTable thead th, table.dataTable thead td{
 
   }
 }
+
+.dataTables_wrapper{
+  max-width: 100vw;
+  overflow-x: auto;
+}
+
+.dataTables_wrapper{
+  @media (max-width:768px) {
+   
+    .dataTables_filter{
+       margin-bottom: 25px;
+       text-align: left!important;
+    }
+    .dataTables_length{
+       margin-bottom: 25px;
+       text-align: left!important;
+    }
+
+    .items {
+      flex-wrap: wrap;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+      padding: 6px;
+      .username{
+        margin-top: 5px ;
+      }
+    }
+  }
+}

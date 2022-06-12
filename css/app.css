@@ -2826,4 +2826,35 @@ table.dataTable thead th, table.dataTable thead td {
   -webkit-box-shadow: none;
           box-shadow: none;
 }
+
+.dataTables_wrapper {
+  max-width: 100vw;
+  overflow-x: auto;
+}
+
+@media (max-width: 768px) {
+  .dataTables_wrapper .dataTables_filter {
+    margin-bottom: 25px;
+    text-align: left !important;
+  }
+  .dataTables_wrapper .dataTables_length {
+    margin-bottom: 25px;
+    text-align: left !important;
+  }
+  .dataTables_wrapper .items {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 6px;
+  }
+  .dataTables_wrapper .items .username {
+    margin-top: 5px;
+  }
+}
 /*# sourceMappingURL=app.css.map */
