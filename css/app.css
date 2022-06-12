@@ -2834,6 +2834,7 @@ table.dataTable thead td {
 }
 
 .dataTables_wrapper {
+  padding-top: 10px;
   padding-bottom: 36px;
 }
 
@@ -2890,7 +2891,7 @@ table.dataTable thead td {
 
 @media (max-width: 425px) {
   .dataTables_wrapper .dataTables_filter {
-    margin-top: -29px !important;
+    margin-top: -31px !important;
   }
   .dataTables_wrapper .dataTables_filter input[type='search'] {
     width: 160px;

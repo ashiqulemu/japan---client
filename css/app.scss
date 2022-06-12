@@ -2565,6 +2565,7 @@ table.dataTable thead td {
 }
 
 .dataTables_wrapper {
+  padding-top: 10px;
   padding-bottom: 36px;
 
    .items{
@@ -2619,9 +2620,10 @@ table.dataTable thead td {
       input[type='search']{
         width:160px;
       }
-      margin-top: -29px!important;
+      margin-top: -31px!important;
     }
   }
+ 
 }
 
 .dataTables_paginate {
