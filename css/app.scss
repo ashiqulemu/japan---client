@@ -2527,3 +2527,22 @@ table.dataTable thead th, table.dataTable thead td{
     }
   }
 }
+
+.border-radius-10{
+  border-radius:10px;
+}
+
+
+#addTask{
+  background:#e5e5e5e6 !important;
+  ::placeholder{
+    color: lightgrey;
+  }
+  .form-control{
+    outline: 0;
+    &:focus{
+      box-shadow: none;
+    }
+
+  }
+}

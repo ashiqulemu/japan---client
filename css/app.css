@@ -2793,4 +2793,37 @@ table.dataTable thead th, table.dataTable thead td {
 .task .inner .sub-txt {
   margin-left: 30px;
 }
+
+.border-radius-10 {
+  border-radius: 10px;
+}
+
+#addTask {
+  background: #e5e5e5e6 !important;
+}
+
+#addTask ::-webkit-input-placeholder {
+  color: lightgrey;
+}
+
+#addTask :-ms-input-placeholder {
+  color: lightgrey;
+}
+
+#addTask ::-ms-input-placeholder {
+  color: lightgrey;
+}
+
+#addTask ::placeholder {
+  color: lightgrey;
+}
+
+#addTask .form-control {
+  outline: 0;
+}
+
+#addTask .form-control:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
 /*# sourceMappingURL=app.css.map */

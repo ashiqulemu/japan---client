@@ -53,7 +53,7 @@
                             Task
                         </a>
                     </li>
-                 
+
                     <!-- divider title -->
                     <p class="nav-types mt-4">Recruitment</p>
 
@@ -170,7 +170,7 @@
                         <li class="nav-item" role="presentation">
                             <button class="nav-link active" id="home-tab" data-bs-toggle="tab"
                                 data-bs-target="#notifications" type="button" role="tab" aria-controls="notifications"
-                                aria-selected="true">TODO  </button>
+                                aria-selected="true">TODO </button>
                         </li>
 
                     </ul>
@@ -257,7 +257,8 @@
                                                 <a href="" class="sub-txt  my-2 btn btn-bordered task-done">Done</a>
                                             </div>
                                         </div>
-                                        <a href="" class="sub-txt  mt-4 float-end btn btn-bordered task-done">Add Task</a>
+                                        <a href="#" data-bs-toggle="modal" data-bs-target="#addTask"
+                                            class="sub-txt  mt-4 float-end btn btn-bordered task-done">Add Task</a>
                                     </div>
                                 </div>
                             </div>
@@ -320,35 +321,55 @@
 
     </footer> -->
 
+    <div class="modal fade" id="addTask" tabindex="-1" aria-labelledby="addTaskLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content border-0 shadow-lg border-radius-10">
+                <div class="modal-header">
+                    <h6 class= 'text-muted mb-0' id="addTaskLabel">Add New Task</h6>
+                    <button type="button" class="btn-close bg-secondary" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group ">
+
+                        <input type="text" class="form-control border-0" placeholder="Task Name here..." name="" id="">
+                    </div>
+                    <div class="form-group">
+
+                        <textarea class="form-control border-0" placeholder="Task Description" name="" id="" cols="10"
+                            rows="2"></textarea>
+                    </div>
+                </div>
+                <div class="modal-footer justify-content-between flex-column align-items-end">
+
+                    <div class="d-flex w-100">
+                        <div class="flex-fill mx-1">
+                            <label for="" class="text-muted"> <small>Due Date:</small> </label>
+                            <input type="date" name="" class="form-control" id="">
+                        </div> 
+                        <div class="flex-fill mx-1">
+                            <label for="" class="text-muted"> <small>Assign To</small> </label>
+                            <select class="form-control">
+                                <option value="">Abuhena david Emu</option>
+                                <option value="">ashiqul islam Emu</option> 
+                            </select> 
+                        </div>
+                    </div> 
+                    <div class="my-2">
+                        <button type="button" class="me-1 
+                        btn btn-sm btn-bordered float-end" data-bs-toggle="modal" data-bs-target="#addTask">
+                            save
+                        </button>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+    </div>
+
 
     <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="./js/iconify.min.js"></script>
     <script src='./js/app.js'> </script>
-
-    <script>
-        // var ctx = document.getElementById("myChart");
-        // var myChart = new Chart(ctx, {
-        //     type: "line",
-        //     data: {
-        //         labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
-        //         datasets: [
-        //             {
-        //                 label: "# of Votes",
-        //                 data: [12, 19, 3, 5, 2, 3]
-        //             }
-        //         ]
-        //     },
-        //     options: {
-        //         scales: {
-        //             y: {
-        //                 ticks: {
-        //                     beginAtZero: true
-        //                 }
-        //             }
-        //         }
-        //     }
-        // });
-    </script>
 
 </body>
 
