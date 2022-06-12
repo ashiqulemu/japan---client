@@ -1964,7 +1964,8 @@ fieldset {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    .username{
+
+    .username {
       padding-left: 10px;
     }
 
@@ -2157,43 +2158,51 @@ fieldset {
 
   }
 }
-.table-heading{
+
+.table-heading {
   padding: 6px;
-    border-radius: 7px;
+  border-radius: 7px;
   margin-bottom: 20px !important;
   box-shadow: 1px 1px 5px #0000001a !important;
 
-  .column-title{
+  .column-title {
     font-size: 14px;
-      color: #424141;
-      font-weight: 600;
+    color: #424141;
+    font-weight: 600;
   }
- 
+
 }
-table.dataTable thead th, table.dataTable thead td{
-  border-bottom: 0!important;
+
+table.dataTable thead th,
+table.dataTable thead td {
+  border-bottom: 0 !important;
 }
-.candidate{
-  .items{
+
+.candidate {
+  .items {
     display: flex;
     align-items: center;
-    .username{
-        font-size: 15px;
-        color: #4e4e4e;
-        font-weight: 600;
-        margin-left: 8px;
-        width: 100%;
-    } 
-    &.designation{
+
+    .username {
+      font-size: 15px;
+      color: #4e4e4e;
+      font-weight: 600;
+      margin-left: 8px;
+      width: 100%;
+    }
+
+    &.designation {
       display: flex;
       align-items: start;
       flex-direction: column;
-      .user{
+
+      .user {
         font-size: 15px;
         color: #4e4e4e;
-        font-weight: 600;  
+        font-weight: 600;
       }
-      .role{}
+
+      .role {}
     }
   }
 }
@@ -2528,40 +2537,68 @@ table.dataTable thead th, table.dataTable thead td{
   }
 }
 
-.border-radius-10{
-  border-radius:10px;
+.border-radius-10 {
+  border-radius: 10px;
 }
 
 
-#addTask{
-  background:#e5e5e5e6 !important;
-  ::placeholder{
+#addTask {
+  background: #e5e5e5e6 !important;
+
+  ::placeholder {
     color: lightgrey;
   }
-  .form-control{
+
+  .form-control {
     outline: 0;
-    &:focus{
+
+    &:focus {
       box-shadow: none;
     }
 
   }
 }
 
-.dataTables_wrapper{
+.dataTables_wrapper {
   max-width: 100vw;
   overflow-x: auto;
 }
 
-.dataTables_wrapper{
-  @media (max-width:768px) {
-   
-    .dataTables_filter{
-       margin-bottom: 25px;
-       text-align: left!important;
+.dataTables_wrapper {
+  padding-bottom: 36px;
+
+   .items{
+    align-items: center;
+    display: flex; 
+    .username {
+      margin-left: 5px;
     }
-    .dataTables_length{
-       margin-bottom: 25px;
-       text-align: left!important;
+   }
+   .dataTables_filter {
+    text-align: left !important;
+    float: right !important; 
+    margin-top: 0;
+    margin-bottom: 31px;
+  }
+
+  @media (max-width:768px) {
+
+    .dataTables_filter {
+      text-align: left !important;
+      float: right !important;
+
+      margin-top: -1.8em!important;
+      margin-bottom: 50px;
+    }
+
+    .dataTables_length {
+      text-align: left !important;
+      float: left;
+    }
+
+    .example2_filter {
+      float: right !important;
+
     }
 
     .items {
@@ -2570,9 +2607,27 @@ table.dataTable thead th, table.dataTable thead td{
       text-align: center;
       align-items: center;
       padding: 6px;
-      .username{
-        margin-top: 5px ;
+
+      .username {
+        margin-top: 5px;
       }
+    }
+  }
+}
+
+.dataTables_paginate {
+  .paginate_button{
+    &.current{
+      border: 0!important;
+      border-radius: 50%!important;
+      width: 36px!important;
+      height: 36px!important;
+      text-align: center!important;
+      font-weight: bold!important;
+      background-color: #dfe6e9!important;
+      display: inline-flex!important;
+    align-items: center;
+    justify-content: center;
     }
   }
 }

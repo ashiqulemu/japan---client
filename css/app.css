@@ -2386,7 +2386,8 @@ fieldset legend {
   font-weight: 600;
 }
 
-table.dataTable thead th, table.dataTable thead td {
+table.dataTable thead th,
+table.dataTable thead td {
   border-bottom: 0 !important;
 }
 
@@ -2832,14 +2833,43 @@ table.dataTable thead th, table.dataTable thead td {
   overflow-x: auto;
 }
 
+.dataTables_wrapper {
+  padding-bottom: 36px;
+}
+
+.dataTables_wrapper .items {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.dataTables_wrapper .items .username {
+  margin-left: 5px;
+}
+
+.dataTables_wrapper .dataTables_filter {
+  text-align: left !important;
+  float: right !important;
+  margin-top: 0;
+  margin-bottom: 31px;
+}
+
 @media (max-width: 768px) {
   .dataTables_wrapper .dataTables_filter {
-    margin-bottom: 25px;
     text-align: left !important;
+    float: right !important;
+    margin-top: -1.8em !important;
+    margin-bottom: 50px;
   }
   .dataTables_wrapper .dataTables_length {
-    margin-bottom: 25px;
     text-align: left !important;
+    float: left;
+  }
+  .dataTables_wrapper .example2_filter {
+    float: right !important;
   }
   .dataTables_wrapper .items {
     -ms-flex-wrap: wrap;
@@ -2856,5 +2886,24 @@ table.dataTable thead th, table.dataTable thead td {
   .dataTables_wrapper .items .username {
     margin-top: 5px;
   }
+}
+
+.dataTables_paginate .paginate_button.current {
+  border: 0 !important;
+  border-radius: 50% !important;
+  width: 36px !important;
+  height: 36px !important;
+  text-align: center !important;
+  font-weight: bold !important;
+  background-color: #dfe6e9 !important;
+  display: -webkit-inline-box !important;
+  display: -ms-inline-flexbox !important;
+  display: inline-flex !important;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 /*# sourceMappingURL=app.css.map */
