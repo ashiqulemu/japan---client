@@ -2861,7 +2861,7 @@ table.dataTable thead td {
   .dataTables_wrapper .dataTables_filter {
     text-align: left !important;
     float: right !important;
-    margin-top: -1.8em !important;
+    margin-top: 0 !important;
     margin-bottom: 50px;
   }
   .dataTables_wrapper .dataTables_length {
@@ -2885,6 +2885,12 @@ table.dataTable thead td {
   }
   .dataTables_wrapper .items .username {
     margin-top: 5px;
+  }
+}
+
+@media (max-width: 425px) {
+  .dataTables_wrapper .dataTables_filter input[type='search'] {
+    width: 160px;
   }
 }
 

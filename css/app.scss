@@ -2585,10 +2585,10 @@ table.dataTable thead td {
 
     .dataTables_filter {
       text-align: left !important;
-      float: right !important;
-
-      margin-top: -1.8em!important;
+      float: right !important; 
+      margin-top: 0!important;
       margin-bottom: 50px;
+     
     }
 
     .dataTables_length {
@@ -2610,6 +2610,14 @@ table.dataTable thead td {
 
       .username {
         margin-top: 5px;
+      }
+    }
+  }
+
+  .dataTables_filter{
+    @media (max-width:425px) {
+      input[type='search']{
+        width:160px;
       }
     }
   }
