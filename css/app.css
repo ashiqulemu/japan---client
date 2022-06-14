@@ -2799,10 +2799,6 @@ table.dataTable thead td {
   border-radius: 10px;
 }
 
-#addTask {
-  background: #e5e5e5e6 !important;
-}
-
 #addTask ::-webkit-input-placeholder {
   color: lightgrey;
 }
