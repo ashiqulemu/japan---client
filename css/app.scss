@@ -2568,16 +2568,18 @@ table.dataTable thead td {
   padding-top: 10px;
   padding-bottom: 36px;
 
-   .items{
+  .items {
     align-items: center;
-    display: flex; 
+    display: flex;
+
     .username {
       margin-left: 5px;
     }
-   }
-   .dataTables_filter {
+  }
+
+  .dataTables_filter {
     text-align: left !important;
-    float: right !important; 
+    float: right !important;
     margin-top: 0;
     margin-bottom: 31px;
   }
@@ -2586,10 +2588,10 @@ table.dataTable thead td {
 
     .dataTables_filter {
       text-align: left !important;
-      float: right !important; 
-      margin-top: 0!important;
+      float: right !important;
+      margin-top: 0 !important;
       margin-bottom: 50px;
-     
+
     }
 
     .dataTables_length {
@@ -2615,30 +2617,62 @@ table.dataTable thead td {
     }
   }
 
-  .dataTables_filter{
+  .dataTables_filter {
     @media (max-width:425px) {
-      input[type='search']{
-        width:160px;
+      input[type='search'] {
+        width: 160px;
       }
-      margin-top: -31px!important;
+
+      margin-top: -31px !important;
     }
   }
- 
+
 }
 
 .dataTables_paginate {
-  .paginate_button{
-    &.current{
-      border: 0!important;
-      border-radius: 50%!important;
-      width: 36px!important;
-      height: 36px!important;
-      text-align: center!important;
-      font-weight: bold!important;
-      background-color: #dfe6e9!important;
-      display: inline-flex!important;
-    align-items: center;
-    justify-content: center;
+  .paginate_button {
+    &.current {
+      border: 0 !important;
+      border-radius: 50% !important;
+      width: 36px !important;
+      height: 36px !important;
+      text-align: center !important;
+      font-weight: bold !important;
+      background-color: #dfe6e9 !important;
+      display: inline-flex !important;
+      align-items: center;
+      justify-content: center;
     }
+  }
+}
+
+.checkmark {
+  color: #32C28C;
+}
+
+.check-box {
+  height: 15px;
+  width: 15px;
+  background-color: #8C97A1;
+  border-radius: 50%;
+  margin-right: 2px;
+  display: inline-block;
+  font-size: 11px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+
+.dropdown-item.active,
+.dropdown-item:active {
+  color: #fff;
+  text-decoration: none;
+  background-color: #f0f2f4;
+}
+
+.form-control {
+  &:focus {
+    box-shadow: none;
   }
 }
